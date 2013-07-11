@@ -2,6 +2,7 @@
 import json
 from bottle import route, run, get, put, request, abort, response, default_app
 from pymongo import Connection
+from cork import Cork
 
 connection = Connection('localhost', 27017)
 db = connection.mydatabase
